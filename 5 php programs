@@ -1,0 +1,106 @@
+//Factorial of number:
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+$num=5;
+$fact =1;
+for($i=$num; $i>=1;$i--) {
+$fact = $fact * $i;
+}
+echo '<br>'. 'The factorial of the number 5 is '. $fact
+?>
+ 
+
+</body>
+</html>
+
+//Fibo Series:
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php 
+function Fibonacci($n){ 
+
+	$num1 = 0; 
+	$num2 = 1; 
+
+	$count = 0; 
+	while ($count < $n){ 
+		echo ' '.$num1; 
+		$num3 = $num2 + $num1; 
+		$num1 = $num2; 
+		$num2 = $num3; 
+		$count= $count + 1; 
+	} 
+} 
+$n = 10; 
+Fibonacci($n); 
+?> 
+
+
+</body>
+</html>
+
+//Palindrome:
+
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+    $s="madam";
+    $rev="";
+    for($i=strlen($s)-1;$i>=0;$i--)
+    {
+        $char=$s[$i];
+        $rev.="$char";
+        
+    }
+    if($rev==$s){
+        echo"$s is a palindrome";
+    }
+    else{
+        echo "$s is not a palindrome";
+    }
+?>
+<body>
+</html>
+
+//Reverse a number:
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+$number = 12345;
+$reverse = 0;
+while ($number != 0)
+{
+$reverse = $reverse * 10 + $number % 10;
+$number = (int)($number / 10); 
+}
+ 
+echo "reverse numeber os $numbers is: $reverse";
+
+   
+
+?>
+<body>
+</html>
+
+//Reverse a string:
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+$string = 'tirth';
+$reverse = '';
+$i = 0;
+while(!empty($string[$i])){
+    $reverse = $string[$i].$reverse;
+    $i++;
+}
+echo $reverse;
+?>
+<body>
+</html>
